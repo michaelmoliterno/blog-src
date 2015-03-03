@@ -1,0 +1,4 @@
+Permalink: <a class="more" href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+{% if article.author %}by <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }} </a>{% endif %}
+<br/>
+{% if article.tags %}tags: {% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> {% endfor %}{% endif %}
