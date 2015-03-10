@@ -1,20 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
-
-<div class='intro'>
-	Intro text for the blog part. 
-</div>
-
-
-
-
 {% if articles %}
 {% for article in (articles_page.object_list if articles_page else articles) %}
 <div class='article'>
-<!-- 	<h2>{{ article.title }}</h2> -->
-<h2><a class="more" href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
-<!-- 	<div class="well small">{% include "metadata.html" %}</div> -->
-	<div class="summary">{{ article.summary }} <br/><a class="btn primary xsmall" href="{{ SITEURL }}/{{ article.url }}">more…</a>
+<h4><a class="more" href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h4>
+<p>Date Published: {{article.date.year}}-{{article.date.month}}-{{article.date.day}}</p>
+	<div class="summary">Summary: {{article.summary }} <br/>
+		<a class="btn primary xsmall" href="{{ SITEURL }}/{{ article.url }}">more…></a>
 	</div>
 </div>	
 {% endfor %}

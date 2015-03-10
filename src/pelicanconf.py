@@ -11,13 +11,13 @@ OUTPUT_PATH = 'output/blog'
 # PAGE_URL = '../{slug}.html'
 # PAGE_SAVE_AS = '../{slug}.html'
 DISPLAY_PAGES_ON_MENU = False
-# DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = False
 
 
 
 ##PATH = 'content'
 # This requires Pelican 3.3+
-STATIC_PATHS = ['images','docs']
+STATIC_PATHS = ['images','docs','d3']
 
 TIMEZONE = 'America/New_York'
 
@@ -62,5 +62,5 @@ THEME = '../pelican-themes/bootstrap'
 GITHUB_USERNAME = 'michaelmoliterno'
 
 MENUITEMS = [# ('Portfolio', '/pages/portfolio.html'),
-			('CV/Résumé', 'https://michaelmoliterno.github.io/Michael%20Moliterno_CV.pdf')]
+			('cv/résumé', 'https://michaelmoliterno.github.io/docs/Michael_Moliterno_CV.pdf')]
 
