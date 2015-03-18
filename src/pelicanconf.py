@@ -48,7 +48,11 @@ DEFAULT_PAGINATION = 5
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
+GOOGLE_ANALYTICS= "UA-60303879-1"
 
+DISQUS_SITENAME="michaelmoliternogithubio"
+
+#GITHUB_URL="https://github.com/michaelmoliterno"
 
 # Added by michaelmoliterno
 THEME = '../pelican-themes/bootstrap'
@@ -59,7 +63,7 @@ THEME = '../pelican-themes/bootstrap'
 # # Which plugins to enable
 # PLUGINS = ['better_figures_and_images']
 
-GITHUB_USERNAME = 'michaelmoliterno'
+#GITHUB_USERNAME = 'michaelmoliterno'
 
 MENUITEMS = [# ('Portfolio', '/pages/portfolio.html'),
 			('cv/résumé', 'https://michaelmoliterno.github.io/docs/Michael_Moliterno_CV.pdf')]
